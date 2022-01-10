@@ -1,0 +1,122 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.img_responsive{
+    max-width: 100%;
+}
+.navbar{
+   background-color: orange;
+   display:flex;
+   flex-direction: row;
+   text-align: center;
+}
+.navbar .logo{
+    display:flex;
+    align-items: center;
+    padding: 0.5rem;
+    
+}
+.navbar ul li{
+    list-style: none;
+    float: left;
+    margin:5px 0px 0px 90px;
+    padding: 0.3rem;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+.navbar ul li a:hover{
+    color:white;
+}
+.hero_image{
+    background: url(snack-ge8667b05b_1920.jpg) no-repeat;
+    background-size:cover;
+    height: 100vh;
+    position: relative;
+}
+.hero_wrapper{
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.hero_wrapper h1{
+    font-size:2.4rem;
+    text-align: center;
+}
+.form_code{
+    text-align:center;
+}
+.form_code .form_text{
+    display: block;
+    width:80%;
+    margin-left:auto;margin-right:2rem;
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+    border-radius:2rem;
+    padding:0.6rem;
+    border:none;
+    outline:none;
+    text-align:center;
+}
+.form_code button{
+    width:40%;
+    margin: auto;
+    text-align: center;
+    background-color:rgb(228, 167, 1);
+    color:white;
+    padding:0.6rem;
+    border:none;border-radius:.6rem;
+}
+.form_code button:hover{
+    width:50%;
+    letter-spacing:.2rem;
+    transition:cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+.product{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.product_list_item{
+    float:left;
+    width: 33.33%;
+}
+.fotter{
+    /* background-color:orange; */
+    margin:300px auto 0px;
+    text-align:center;
+    padding:0.5rem;
+    
+}
+
+@media screen and (max-width:896px){
+    .hero_image{
+        height: 60vh;
+    }
+    .product_list_item{
+        width:100%;
+        float: none;
+    }
+    .hero_image .hero_wrapper p{
+        font: size 10px;
+    }
+    .form_code .form_text{
+        width:90%;
+    }
+    .form_code button{
+        width:100%;
+    }
+    .navbar ul li{
+        float: none;
+        position: relative;
+        right: -80px;
+    }
+    .footer{
+        margin-top: -300px;
+        padding: -0.5rem;
+    }
+}
